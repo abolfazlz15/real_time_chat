@@ -16,7 +16,7 @@
                 <h1 class="display-4">Multiple Chat Application</h1>
                 <p class="lead">This is an example for creating group chats.</p>
                 {% if user.is_authenticated %}
-                <h6>You logged in as <strong>{{ user.username }}</strong> - <a href="{% url 'logout' %}" class="">Logout</a></h6>
+                <h6>You logged in as <strong>{{ user.username }}</strong> - <a href="{% url 'auths:logout' %}" class="">Logout</a></h6>
                 {% endif %}
             </div>
         </div>
